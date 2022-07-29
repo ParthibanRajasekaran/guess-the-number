@@ -33,7 +33,7 @@ document.querySelector(".again").addEventListener("click", function () {
   setScore(numberOfTriesAttempted);
   document.querySelector(".number").textContent = "?";
   document.querySelector(".guess").value = "";
-  setBackgroundImage("url('default.jpg')");
+  setBackgroundImage("url('images/default.jpg')");
 });
 
 document.querySelector(".check").addEventListener("click", function () {
@@ -44,7 +44,7 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (enteredNumber === secretNumber) {
     setMessage("🎉 Correct number");
     document.querySelector(".number").textContent = secretNumber;
-    setBackgroundImage("url('win.jpg')");
+    setBackgroundImage("url('images/win.jpg')");
     document.querySelector(".number").style.width = "30rem";
 
     if (highscore < numberOfTriesAttempted) {
@@ -58,7 +58,7 @@ document.querySelector(".check").addEventListener("click", function () {
       setScore(numberOfTriesAttempted);
     } else {
       setScore(0);
-      setBackgroundImage("url('lose.jpg')");
+      setBackgroundImage("url('images/lose.jpg')");
       setMessage("💔 You lost the game");
     }
   }
