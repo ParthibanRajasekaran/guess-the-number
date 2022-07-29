@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
@@ -12,9 +12,9 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   color: #eee;
-  background-image: url('default.jpg');
+  background-image: url("default.jpg");
   /* background-color: #60b347; */
 }
 
@@ -80,6 +80,18 @@ h1 {
   position: absolute;
   top: 2rem;
   left: 2rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .guess {
