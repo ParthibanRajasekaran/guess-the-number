@@ -16,7 +16,7 @@ let numberOfTriesAttempted = 10;
 let highscore = 0;
 
 document.querySelector('.again').addEventListener('click', function () {
-  numberOfTriesAttempted = 20;
+  numberOfTriesAttempted = 10;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.score').textContent = numberOfTriesAttempted;
